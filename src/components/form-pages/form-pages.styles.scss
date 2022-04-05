@@ -1,0 +1,94 @@
+.form-pages{
+    height: 100vh;
+    background-color: #f3fbfb;
+    flex: .65 1 65vw;
+    
+    padding: 7rem 3rem 1rem 3rem ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-size: 4rem;
+    }
+
+
+    &__btn{
+        cursor: pointer;
+        color:#fff;
+        background-color: #0084e3;
+        font-size: 1.6rem;
+        border: none;
+        outline: none;
+        width:10rem;
+        height: 4rem;
+        padding: 3px 5px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        align-self: center;
+        margin-left:43%;
+        &:focus{
+            outline: none;
+        }
+    }
+
+
+    .add-school{
+        padding: 4px 8px;
+        width: 60%;
+        height: 7rem;
+        border-radius: 6px;
+        margin-bottom:1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(128, 193, 240, 0.2);
+        
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        -ms-border-radius: 6px;
+        -o-border-radius: 6px;
+
+        &__content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            svg{
+                margin-right: .4rem;
+                width: 3.5rem;
+                height: 3.5rem;
+
+                polygon{
+                    stroke: var(--primary-blue);
+                    fill: var(--primary-blue);
+                }
+                path,polyline{
+                    stroke: var(--primary-blue);
+                    fill: var(--primary-blue);
+                }
+                
+            }
+        }
+        &__details{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &--title{
+                color: var(--primary-blue);
+            }
+            &--sub{
+                color: var(--text-dark);
+            }
+        }
+
+        &__btn{
+            fill: var(--primary-blue);
+            cursor: pointer;
+            
+        }
+    }
+}
